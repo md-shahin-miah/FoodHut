@@ -103,7 +103,7 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                   ),
                 ),
                 Container(
-                  height: 150,
+                  height: 130,
                   child: TabBarView(
                     children: [
                       Container(
@@ -200,7 +200,7 @@ class BottomMenu extends StatelessWidget {
             children: const <Widget>[
               Icon(
                 Icons.timelapse,
-                color: Color(0xFF404aff),
+                color: Color(0xffb91b20),
                 size: 35,
               ),
               SizedBox(
@@ -219,7 +219,7 @@ class BottomMenu extends StatelessWidget {
             children: const <Widget>[
               Icon(
                 Icons.directions,
-                color: Color(0xFF23c58a),
+                color: Color(0xffff3ed2),
                 size: 35,
               ),
               SizedBox(
@@ -238,7 +238,7 @@ class BottomMenu extends StatelessWidget {
             children: const <Widget>[
               Icon(
                 Icons.map,
-                color: Color(0xFFff0654),
+                color: Color(0xff00b7b7),
                 size: 35,
               ),
               SizedBox(
@@ -257,7 +257,7 @@ class BottomMenu extends StatelessWidget {
             children: const <Widget>[
               Icon(
                 Icons.directions_bike,
-                color: Color(0xFFe95959),
+                color: Color(0xffb98b00),
                 size: 35,
               ),
               SizedBox(
@@ -299,7 +299,7 @@ class AddToCartMenu extends StatelessWidget {
               width: 200.0,
               height: 45.0,
               decoration: BoxDecoration(
-                color: const Color(0xFFfd2c2c),
+                color: const Color(0xff328875),
                 border: Border.all(color: Colors.white, width: 2.0),
                 borderRadius: BorderRadius.circular(10.0),
               ),
@@ -330,7 +330,7 @@ class DetailContentMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\'s De Finibus Bonorum et Malorum for use in a type specimen book.',
+      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print. The passage is attributed the 15th century who is thought to have scrambled parts of Cicero\'s De Finibus Bonorum et Malorum for use in a type specimen book.',
       style: TextStyle(
           fontSize: 14.0,
           color: Colors.black87,

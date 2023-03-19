@@ -43,7 +43,7 @@ class _IconBadgeState extends State<IconBadge> {
             child: Container(
               padding: EdgeInsets.all(1),
               decoration: BoxDecoration(
-                color: Colors.red[300],
+                color: Colors.red[500],
                 borderRadius: BorderRadius.circular(6),
               ),
               height: 7.0,

@@ -254,7 +254,7 @@ class SignInButtonWidget extends StatelessWidget {
           ),
         ],
         gradient: LinearGradient(
-            colors: [Color(0xFFf7418c), Color(0xFFfbab66)],
+            colors: [Color(0xff397694), Color(0xff328875)],
             begin: FractionalOffset(0.2, 0.2),
             end: FractionalOffset(1.0, 1.0),
             stops: [0.0, 1.0],
@@ -345,7 +345,7 @@ class FacebookGoogleLogin extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFf7418c),
+                    color: Color(0xff328875),
                   ),
                   child: const Icon(
                     FontAwesomeIcons.facebookF,
@@ -362,7 +362,7 @@ class FacebookGoogleLogin extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFf7418c),
+                    color: Color(0xff328875),
                   ),
                   child: const Icon(
                     FontAwesomeIcons.google,
