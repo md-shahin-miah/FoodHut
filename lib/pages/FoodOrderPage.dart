@@ -58,16 +58,16 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   height: 10,
                 ),
                 CartItem(
-                    productName: "Grilled Salmon",
-                    productPrice: "\$96.00",
+                    productName: "Grilled Fish",
+                    productPrice: "\$94.00",
                     productImage: "ic_popular_food_1",
-                    productCartQuantity: "2"),
+                    productCartQuantity: "3"),
                 const SizedBox(
                   height: 10,
                 ),
                 CartItem(
-                    productName: "Meat vegetable",
-                    productPrice: "\$65.08",
+                    productName: "Vege Chicken",
+                    productPrice: "\$35.08",
                     productImage: "ic_popular_food_4",
                     productCartQuantity: "5"),
                 const SizedBox(
@@ -349,7 +349,7 @@ class CartItem extends StatelessWidget {
                     child: Center(
                         child: Image.asset(
                       "assets/images/popular_foods/$productImage.png",
-                      width: 110,
+                      width: 80,
                       height: 100,
                     )),
                   ),

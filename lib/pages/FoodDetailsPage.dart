@@ -40,82 +40,86 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                 })
           ], systemOverlayStyle: SystemUiOverlayStyle.dark,
         ),
-        body: Container(
-          padding: const EdgeInsets.only(
-            left: 15,
-            right: 15,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Card(
-                semanticContainer: true,
-                clipBehavior: Clip.antiAliasWithSaveLayer,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(3.0),
-                ),
-                elevation: 1,
-                margin: const EdgeInsets.all(5),
-                child: Image.asset(
-                  'assets/images/bestfood/' + 'ic_best_food_8' + ".jpeg",
-                ),
-              ),
-              /*  Container(
-                height: 150,
-                child:FoodDetailsSlider(
-                    slideImage1: "assets/images/bestfood/ic_best_food_8.jpeg",
-                    slideImage2: "assets/images/bestfood/ic_best_food_9.jpeg",
-                    slideImage3: "assets/images/bestfood/ic_best_food_10.jpeg"),
-              ),*/
-
-              FoodTitleWidget(
-                  productName: "Grilled Salmon",
-                  productPrice: "\$96.00",
-                  productHost: "pizza hut"),
-              const SizedBox(
-                height: 15,
-              ),
-              AddToCartMenu(),
-              const SizedBox(
-                height: 15,
-              ),
-              const PreferredSize(
-                preferredSize: Size.fromHeight(50.0),
-                child: TabBar(
-                  labelColor: Color(0xFFfd3f40),
-                  indicatorColor: Color(0xFFfd3f40),
-                  unselectedLabelColor: Color(0xFFa4a1a1),
-                  indicatorSize: TabBarIndicatorSize.label,
-                  labelStyle: TextStyle(
-                    fontWeight: FontWeight.w500,
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Container(
+            padding: const EdgeInsets.only(
+              left: 15,
+              right: 15,
+              bottom: 20
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Card(
+                  semanticContainer: true,
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(3.0),
                   ),
-                  tabs: [
-                    Tab(
-                      text: 'Food Details',
-                    ),
-                    Tab(
-                      text: 'Food Reviews',
-                    ),
-                  ], // list of tabs
+                  elevation: 1,
+                  margin: const EdgeInsets.all(5),
+                  child: Image.asset(
+                    'assets/images/bestfood/' + 'ic_best_food_8' + ".jpeg",
+                  ),
                 ),
-              ),
-              Container(
-                height: 150,
-                child: TabBarView(
-                  children: [
-                    Container(
-                      color: Colors.white24,
-                      child: DetailContentMenu(),
-                    ),
-                    Container(
-                      color: Colors.white24,
-                      child: DetailContentMenu(),
-                    ), // class name
-                  ],
+                /*  Container(
+                  height: 150,
+                  child:FoodDetailsSlider(
+                      slideImage1: "assets/images/bestfood/ic_best_food_8.jpeg",
+                      slideImage2: "assets/images/bestfood/ic_best_food_9.jpeg",
+                      slideImage3: "assets/images/bestfood/ic_best_food_10.jpeg"),
+                ),*/
+
+                FoodTitleWidget(
+                    productName: "Grilled Salmon",
+                    productPrice: "\$96.00",
+                    productHost: "pizza hut"),
+                const SizedBox(
+                  height: 15,
                 ),
-              ),
-              BottomMenu(),
-            ],
+                AddToCartMenu(),
+                const SizedBox(
+                  height: 15,
+                ),
+                const PreferredSize(
+                  preferredSize: Size.fromHeight(50.0),
+                  child: TabBar(
+                    labelColor: Color(0xFFfd3f40),
+                    indicatorColor: Color(0xFFfd3f40),
+                    unselectedLabelColor: Color(0xFFa4a1a1),
+                    indicatorSize: TabBarIndicatorSize.label,
+                    labelStyle: TextStyle(
+                      fontWeight: FontWeight.w500,
+                    ),
+                    tabs: [
+                      Tab(
+                        text: 'Food Details',
+                      ),
+                      Tab(
+                        text: 'Food Reviews',
+                      ),
+                    ], // list of tabs
+                  ),
+                ),
+                Container(
+                  height: 150,
+                  child: TabBarView(
+                    children: [
+                      Container(
+                        color: Colors.white24,
+                        child: DetailContentMenu(),
+                      ),
+                      Container(
+                        color: Colors.white24,
+                        child: DetailContentMenu(),
+                      ), // class name
+                    ],
+                  ),
+                ),
+                BottomMenu(),
+              ],
+            ),
           ),
         ),
       ),

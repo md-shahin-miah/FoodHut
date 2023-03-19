@@ -10,11 +10,23 @@ import '../widgets/SearchWidget.dart';
 import '../widgets/TopMenus.dart';
 import 'SignInPage.dart';
 
+
+import 'package:flutter/material.dart';
+
+
+import '../widgets/icon_badge.dart';
+
+
+
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
 class _HomePageState extends State<HomePage> {
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +59,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavBarWidget(),
+
     );
   }
 }

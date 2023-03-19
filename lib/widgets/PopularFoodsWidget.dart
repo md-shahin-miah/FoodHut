@@ -266,11 +266,25 @@ class PopularFoodItems extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       children: <Widget>[
         PopularFoodTiles(
+            name: "Salad With Chicken",
+            imageUrl: "ic_popular_food_4",
+            rating: "4.2",
+            numberOfRating: "70",
+            price: "121.00",
+            slug: ""),
+        PopularFoodTiles(
+            name: "Potato,Meat fry",
+            imageUrl: "ic_popular_food_6",
+            rating: "4.7",
+            numberOfRating: "90",
+            price: "21.0",
+            slug: ""),
+        PopularFoodTiles(
             name: "Fried Egg",
             imageUrl: "ic_popular_food_1",
-            rating: '4.9',
-            numberOfRating: '200',
-            price: '15.06',
+            rating: '4.8',
+            numberOfRating: '300',
+            price: '17.16',
             slug: "fried_egg"),
         PopularFoodTiles(
             name: "Mixed Vegetable",
@@ -279,13 +293,7 @@ class PopularFoodItems extends StatelessWidget {
             numberOfRating: "100",
             price: "17.03",
             slug: ""),
-        PopularFoodTiles(
-            name: "Salad With Chicken",
-            imageUrl: "ic_popular_food_4",
-            rating: "4.0",
-            numberOfRating: "50",
-            price: "11.00",
-            slug: ""),
+
         PopularFoodTiles(
             name: "Mixed Salad",
             imageUrl: "ic_popular_food_5",
@@ -307,25 +315,19 @@ class PopularFoodItems extends StatelessWidget {
             numberOfRating: "100",
             price: "11.10",
             slug: ""),
-        PopularFoodTiles(
-            name: "Potato,Meat fry",
-            imageUrl: "ic_popular_food_6",
-            rating: "4.2",
-            numberOfRating: "70",
-            price: "23.0",
-            slug: ""),
+
         PopularFoodTiles(
             name: "Fried Egg",
             imageUrl: "ic_popular_food_1",
-            rating: '4.9',
-            numberOfRating: '200',
-            price: '15.06',
+            rating: '4.4',
+            numberOfRating: '300',
+            price: '14.06',
             slug: "fried_egg"),
         PopularFoodTiles(
             name: "Red meat,Salad",
             imageUrl: "ic_popular_food_2",
-            rating: "4.6",
-            numberOfRating: "150",
+            rating: "4.3",
+            numberOfRating: "120",
             price: "12.00",
             slug: ""),
       ],
